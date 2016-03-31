@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_front_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp" >
+
+    <ImageView
+        android:id="@+id/iv_lock_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lock_icon" />
+
+    
+    <TextView
+        android:id="@+id/tvw_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/iv_lock_icon"
+        android:text="fontdoor" />
+    <TextView 
+        android:id="@+id/tvw_click_to_conn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     	android:layout_below="@id/tvw_door"
+		android:layout_alignLeft="@id/tvw_door"
+		android:layout_marginTop="2dp"
+		android:layout_marginBottom="2dp"
+		android:text="@string/click_to_conn"  
+		android:textSize="15sp"  
+		 android:textColor="#999999"
+		android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/iv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/arr_right" />
+
+    <TextView
+        android:id="@+id/tvw_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/iv_next"
+        android:textSize="18sp"
+        android:textColor="#999999"
+        android:text="未连接" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/iv_lock_icon"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/lock_divider_line" />
+
+</RelativeLayout>

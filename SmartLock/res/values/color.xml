@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sm_48a7c7">#48a7c7</color> <!-- superuser 背景色 -->
+    <color name="sm_46a6c7">#46a6c7</color> <!-- 电池电量颜色 -->
+    <color name="sm_b1b1b1">#b1b1b1</color> <!-- 条目选中背景 -->
+    
+</resources>

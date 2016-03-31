@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_lock_pager_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_lock_pger_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar" >
+
+        <!--
+             <ListView
+            android:id="@+id/lvw_lock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+        </ListView>
+        -->
+
+        <com.roamer.slidelistview.SlideListView
+            xmlns:slide="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lvw_lock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            slide:slideAnimationTime="200"
+            slide:slideLeftAction="scroll"
+            slide:slideMode="both"
+            slide:slideRightAction="scroll" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_ver_and_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="@dimen/sm_5_dp"
+        android:text="version 4.0|www.kolmon.net" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llt_lock_pager_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <include 
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:id="@+id/swither_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto unlock"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvw_battery_level_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="60%"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/tvw_battery_level_value"
+                android:text="Battery"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_white_line" />
+
+        <com.example.smartlock.widget.VDHLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvw_lock_raket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/main_lock_raket" />
+
+            <TextView
+                android:id="@+id/tvw_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/lock_locked"
+                android:paddingBottom="10dp"
+                 />
+
+            <TextView
+                android:id="@+id/tvw_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvw_lock_raket"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:clickable="true"
+                android:paddingRight="3dp"
+                android:drawableLeft="@drawable/selector_key" />
+
+        </com.example.smartlock.widget.VDHLayout>
+    </LinearLayout>
+    <TextView 
+            android:id="@+id/tv_ver_and_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="@dimen/sm_5_dp"
+            android:background="@null"
+            android:text="version 4.0|www.kolmon.net "
+            android:textColor="@android:color/white"
+            />
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartlock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/> -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- appkey   56761fe3e0f55a5cf600700d -->
+
+    <application
+        android:name="com.example.smartlock.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56761fe3e0f55a5cf600700d" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="googlepaly" />
+
+        <!-- com.example.smartlock.ble.DeviceScanActivity -->
+        <!-- com.example.smartlock.activity.MainActivity2 -->
+        <activity
+            android:name="com.example.smartlock.activity.MainActivity2"
+            android:configChanges="orientation|keyboardHidden" 
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.smartlock.activity.NameAndPswActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.example.smartlock.ble.DeviceControlActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+
+        <service
+            android:name="com.example.smartlock.ble.BluetoothLeService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

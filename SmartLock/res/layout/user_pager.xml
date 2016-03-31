@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_user_pager_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <include 
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"
+         />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout
+        android:id="@+id/llt_spueruser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="490"
+        android:layout_below="@id/title_bar"
+        android:background="@color/sm_48a7c7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="180" />
+
+        <TextView
+            android:id="@+id/tvw_super_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="190"
+            android:text="Nina"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvw_last_action"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="120"
+            android:text="0 hrs 41 minutes|locked"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvw_users"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="545"
+        android:layout_below="@id/llt_spueruser"
+         >
+    </ListView>
+        
+        
+    </LinearLayout>
+
+     <TextView 
+            android:id="@+id/tv_ver_and_addr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="@dimen/sm_5_dp"
+            android:background="@null"
+            android:text="version 4.0|www.kolmon.net"
+            />
+
+</RelativeLayout>

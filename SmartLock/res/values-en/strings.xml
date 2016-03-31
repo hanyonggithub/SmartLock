@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KOLMON</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="version">version 4.0</string>
+    <string name="net_address">www.kolmon.net</string>
+    <string name="title_list">List</string>
+    <string name="title_lock">Lock</string>
+    <string name="title_user">User</string>
+    <string name="btn_ok">OK</string>
+    <string name="change_lock_name">New name of the lock</string>
+    <string name="new_lock_name">input the new name</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="fail_to_new_name">Fail to change the lock\'s name</string>
+    <string name="suc_to_new_name">Success to change the lock\'s name</string>
+    <string name="name_hint">please input the username</string>
+    <string name="psw_hint">please input the password</string>
+    <string name="name_psw_not_null">Name and password cannot be null!</string>
+    <string name="name_psw_not_invalid">The password only allows to contain number, letter, and underline!</string>
+    <string name="name_not_invalid">The user name only allows to contain letter, and underline!</string>
+    <string name="psw_confirm_fail">Error,re-enter to confirm</string>
+    <string name="confirm_psw">input new password again</string>
+    <string name="click_to_conn">click to connect</string>
+    
+    
+    <string name="suc_open">Success to open the lock</string>
+    <string name="fail_open">Fail to open the lock</string>
+    <string name="suc_query_power">查询电量成功</string>
+    <string name="fail_query_power">Fail to get the battery power</string>
+    <string name="suc_create">创建用户成功</string>
+    <string name="fail_create">Fail to add a new user</string>
+    <string name="suc_login">登录成功</string>
+    <string name="fail_login">Fail to log in,try it again</string>
+    <string name="suc_edit">修改用户名密码成功</string>
+    <string name="fail_edit">Fail to edit the userInfo</string>
+    <string name="suc_enable">恢复用户权限成功</string>
+    <string name="fail_enable">Fail to authorize</string>
+    <string name="suc_disable">取消用户权限成功</string>
+    <string name="fail_disable">Fail to disable the user</string>
+    <string name="suc_delete">删除用户成功</string>
+    <string name="fail_delete">Fail to delete the user</string>
+    <string name="has_login">Logged</string>
+    <string name="has_connected">Connected</string>
+    <string name="not_conncted">Disconnected</string>
+    <string name="auto_unlock">Auto Unlock</string>
+    <string name="manual_unlock">Manual Unlock</string>
+    <string name="create_user">Create User</string>
+    <string name="edit_user">Edit User</string>
+    <string name="login">Login</string>
+    <string name="connecting">connecting...</string>
+    <string name="action_time">%1$s-%2$s %3$s:%4$s</string>
+    <string name="no_device">No device is connected</string>
+    <string name="not_log">Please log in first</string>
+    <string name="no_privilage">only the administrator can create user</string>
+    <string name="too_many_user">you can create three user at most!</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+</resources>
